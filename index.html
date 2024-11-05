@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Simples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      button {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Gerenciador de Alunos</h2>
+
+ 
+      <input type="hidden" id="studentId" />
+      <label for="name">Nome:</label>
+      <input type="text" id="name" required />
+      <label for="age">Idade:</label>
+      <input type="number" id="age" required />
+      <button onclick="cadastrarAluno()" type="button">Salvar</button>
+  
+
+    <h3>Lista de Alunos</h3>
+    <ul id="studentList">
+      
+    </ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
